@@ -8,7 +8,7 @@ class EventsController < ApplicationController
     if @event.save
       flash[:notice] = "Event created!"
     else
-      flash.now[:alert] = "Event not created"
+      flash.now[:alert] = "Event not created!"
       render "new"
     end
   end
